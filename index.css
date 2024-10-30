@@ -13,7 +13,6 @@ nav {
     
     background-color: #dadada;
     box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.500);
-    margin-bottom: 100px;
 }
 
 .logo img {
@@ -35,10 +34,67 @@ nav {
     color: #333; /* Cor dos links e tals */
 }
 
+.banner{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+.banner span{
+    color: rgb(0, 150, 250);
+}
+.banner h1{
+    font-size: 50px;
+}
+.banner img{
+    width: 300px;
+    scale: 2;
+    animation: flutuar 2s infinite alternate ease-in-out;
+}
+
+@keyframes flutuar {
+    0%{
+        scale: 2;
+        transform: translateY(0px);
+    }
+    100%{
+        scale: 2.1;
+        transform: translateY(20px);
+    }
+}
+/* Cards */
+.products-cards{
+    background-color: #cacaca;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.500);
+
+    margin-top: 100px;
+    justify-content: center;
+    margin-bottom: 100px;
+    padding-block: 20px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    margin: 10px;
+    background-color: #dadada;
+    border: solid 1px white;
+    border-radius: 15px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+.card img{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     position: relative;
     bottom: 0;
     width: 100%;
